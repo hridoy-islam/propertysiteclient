@@ -1,5 +1,5 @@
 import AppBar from '@mui/material/AppBar';
-import { Button,  Tab, Tabs, Toolbar, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Button, Tabs, Toolbar, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { Link } from 'react-router-dom';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import MainDrawer from './MainDrawer'; 
@@ -14,8 +14,10 @@ function Header() {
   return (
     <AppBar sx={{ background: "#063970" }}>
       <Toolbar>
+        
         <HomeOutlinedIcon sx={{ fontSize: "2rem" }} />
-        <Typography sx={{ fontSize: "2rem", marginTop: "2px" }}>Bdproperty</Typography>
+        <Typography sx={{ fontSize: "2rem", marginTop: "2px" }}><Link className='removeUnderline lightColor' to="/">Bdproperty</Link></Typography>
+        
         {isMatch ? (
           <>
             <MainDrawer />
@@ -25,14 +27,14 @@ function Header() {
             <Tabs
               sx={{ marginLeft: "auto" }}
             >
-            <Link className='removeUnderline lightColor'><Tab label="Add A Property" /></Link>
-            <Link className='removeUnderline lightColor' ><Tab label="Guides" /></Link>
-            <Link className='removeUnderline lightColor' ><Tab label="Services" /></Link>
-            <Link to='/newprojects' className='removeUnderline lightColor' ><Tab label="New Projects" /></Link>
+            <Link className='removeUnderline lightColor'> Add A Property </Link>
+            <Link className='removeUnderline lightColor' >Guides</Link>
+            <Link className='removeUnderline lightColor' >Services</Link>
+            <Link to='/newprojects' className='removeUnderline lightColor' >New Projects</Link>
             
             </Tabs>
             <Button    sx={{ marginLeft: "10px" }} variant="contained">
-            <Link to='/login' className='removeUnderline lightColor' >Login </Link>
+            <Link to='/login' className='lightColor' style={{textDecoration: 'none'}} >Login </Link>
             </Button>
           </>
         )}

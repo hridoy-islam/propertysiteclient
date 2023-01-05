@@ -1,10 +1,16 @@
 .removeUnderline {
   text-decoration: none;
+  padding: 10px; 
 }
 .lightColor {
   color: #ffffff;
-  font-weight: 700;
 }
 .newpropertybg {
   background: url('https://www.bengalinteriors.com/wp-content/uploads/2022/02/pexels-houzlook-com-3797991.jpg') center center;
+}
+.footerbg{
+  background-color: #063970;
+  margin-top: 40px;
+  padding: 20px 0;
+
 }
