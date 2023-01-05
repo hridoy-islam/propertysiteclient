@@ -10,6 +10,8 @@ import Users from "../Pages/Dashboard/Users/Users";
 import Register from "../Pages/Register/Register";
 import Login from "../Pages/Login/Login";
 import Forgot from "../Pages/Forgot/Forgot";
+import NewProjects from "../Pages/NewProjects/NewProjects";
+import Bookings from "../Pages/Dashboard/Bookings/Bookings";
 
 const router = createBrowserRouter([
     {
@@ -32,6 +34,10 @@ const router = createBrowserRouter([
           path: "/forgotpassword",
           element: <Forgot />,
         },
+        {
+          path: "/newprojects",
+          element: <NewProjects />,
+        },
       ],
     },
     {
@@ -49,6 +55,10 @@ const router = createBrowserRouter([
         {
           path: "/dashboard/users",
           element: <Users />,
+        },
+        {
+          path: "/dashboard/bookings",
+          element: <Bookings />,
         },
       ],
     },

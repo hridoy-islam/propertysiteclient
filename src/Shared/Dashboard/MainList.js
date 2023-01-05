@@ -39,7 +39,9 @@ const MainList = () => {
                 <ListItemIcon>
                     <BarChartIcon />
                 </ListItemIcon>
-                <ListItemText primary="Reports" />
+                <Link className='removeUnderline' to='/dashboard/bookings'>
+                <ListItemText primary="Bookings" />
+                </Link>
             </ListItemButton>
             <ListItemButton>
                 <ListItemIcon>

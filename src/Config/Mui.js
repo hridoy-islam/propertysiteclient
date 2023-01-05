@@ -10,8 +10,12 @@ const theme = createTheme({
           main: purple[500],
         },
         secondary: {
+          light: '#ffffff',
           main: green[500],
         },
+        lightColor: {
+          main: '#ffffff',
+        }
       },
   });
 
