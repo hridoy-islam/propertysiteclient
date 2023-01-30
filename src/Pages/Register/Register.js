@@ -1,8 +1,6 @@
-import { Avatar, Box, Button, Checkbox, Container, CssBaseline, FormControlLabel, Grid, Link, TextField, Typography } from '@mui/material';
+import { Box, Button, Checkbox, Container, CssBaseline, FormControlLabel, Grid, TextField, Typography } from '@mui/material';
 import React from 'react';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-
-
+import { Link } from 'react-router-dom';
 
 const Register = () => {
         return (
@@ -17,9 +15,6 @@ const Register = () => {
                             alignItems: 'center',
                         }}
                     >
-                        <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-                            <LockOutlinedIcon />
-                        </Avatar>
                         <Typography component="h1" variant="h5">
                             Sign up
                         </Typography>
@@ -84,7 +79,7 @@ const Register = () => {
                             </Button>
                             <Grid container justifyContent="flex-end">
                                 <Grid item>
-                                    <Link href="/login" variant="body2">
+                                    <Link to="/login">
                                         Already have an account? Sign in
                                     </Link>
                                 </Grid>

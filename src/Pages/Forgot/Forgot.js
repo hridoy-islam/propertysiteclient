@@ -1,6 +1,7 @@
-import { Avatar, Box, Button, Container, CssBaseline, Grid, Link, TextField, Typography } from '@mui/material';
+import { Avatar, Box, Button, Container, CssBaseline, Grid, TextField, Typography } from '@mui/material';
 import React from 'react';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import { Link } from 'react-router-dom';
 
 const Forgot = () => {
     return (
@@ -42,13 +43,8 @@ const Forgot = () => {
               Forgot Password
             </Button>
             <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
-              </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link to="/register">
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>

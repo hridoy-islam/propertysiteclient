@@ -12,6 +12,9 @@ import Login from "../Pages/Login/Login";
 import Forgot from "../Pages/Forgot/Forgot";
 import NewProjects from "../Pages/NewProjects/NewProjects";
 import Bookings from "../Pages/Dashboard/Bookings/Bookings";
+import Divison from "../Pages/Divison/Divison";
+import AddPropertyClient from '../Pages/AddProperty/AddPropertyClient';
+import PrivateRoutes from "./PrivateRoutes";
 
 const router = createBrowserRouter([
     {
@@ -38,6 +41,14 @@ const router = createBrowserRouter([
           path: "/newprojects",
           element: <NewProjects />,
         },
+        {
+          path: "/d/:divison",
+          element: <Divison />,
+        },
+        {
+          path: "/addproperty",
+          element: <PrivateRoutes><AddPropertyClient /></PrivateRoutes>,
+        }
       ],
     },
     {
