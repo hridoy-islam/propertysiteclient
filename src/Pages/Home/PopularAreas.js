@@ -5,7 +5,7 @@ import divisons from '../../Config/divison.json'
 
 const PopularAreas = () => {
     return (
-        <Container>
+        <Container sx={{ marginTop: '60px' }}>
             <Typography varient="h2" component="h2" sx={{ fontSize: '28px', fontWeight: '500', textAlign: 'center', p: 4 }}>Popular Areas</Typography>
             <Grid container spacing={2}>
                 {divisons.map(divison => <Grid item xs={12} sm={3} key={divison.id}>
